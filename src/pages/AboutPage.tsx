@@ -50,7 +50,7 @@ export function AboutPage() {
     <>
       <PageHeader
         title="Um Smartgarða"
-        subtitle="Áður Lóðasláttur — stofnað 2005, yfir 20 ára reynsla."
+        subtitle="Lóðasláttur sameinaðist Smartgörðum — yfir 20 ára reynsla."
       />
 
       {/* Intro section */}
@@ -60,10 +60,10 @@ export function AboutPage() {
             Við erum lítið og persónulegt fyrirtæki sem elskar garða.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-(--color-text-muted)">
-            Smartgarðar var stofnað árið 2005 undir nafninu Lóðasláttur og hefur
-            starfað óslitið síðan þá. Nafnið breyttist en þjónustan er sú sama —
-            sama teymið, sama reynslan og sama áherslan á gæði. Við höfum þjónað
-            fjölskyldum og fyrirtækjum um allt höfuðborgarsvæðið í yfir 20 ár.
+            Smartgarðar var stofnað árið 2005 og Lóðasláttur sameinaðist
+            fyrirtækinu. Sama teymið, sama reynslan og sama áherslan á gæði — nú
+            undir einu nafni. Við höfum þjónað fjölskyldum og fyrirtækjum um
+            allt höfuðborgarsvæðið í yfir 20 ár.
           </p>
         </div>
       </section>
