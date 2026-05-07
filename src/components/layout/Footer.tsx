@@ -73,7 +73,7 @@ export function Footer() {
                   {siteData.email}
                 </a>
               </p>
-              <Button variant="primary" size="sm" href="/hafdu-samband">
+              <Button variant="primary" size="lg" href="/hafdu-samband">
                 Senda fyrirspurn
               </Button>
             </div>
