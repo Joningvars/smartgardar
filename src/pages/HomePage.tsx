@@ -19,8 +19,8 @@ export function HomePage() {
     <>
       <HeroSection />
       <ServiceHighlights />
-      <Testimonials />
       <ProjectCarousel />
+      <Testimonials />
       <TrustSection />
     </>
   );

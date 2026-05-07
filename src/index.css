@@ -28,6 +28,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button,
+[role="button"],
+a {
+  cursor: pointer;
+}
+
 /* Infinite scroll carousel animation */
 @keyframes scroll {
   0% {
@@ -39,7 +45,7 @@ body {
 }
 
 .animate-scroll {
-  animation: scroll 30s linear infinite;
+  animation: scroll 90s linear infinite;
 }
 
 .animate-scroll:hover {
@@ -50,4 +56,14 @@ body {
   .animate-scroll {
     animation: none;
   }
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

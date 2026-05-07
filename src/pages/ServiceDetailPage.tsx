@@ -23,7 +23,7 @@ export function ServiceDetailPage() {
   }
 
   return (
-    <section className="px-4 py-16 md:py-24">
+    <section className="px-4 pt-28 pb-16 md:pt-36 md:pb-24">
       <div className="mx-auto max-w-6xl">
         {/* Two-column layout: text left, images right */}
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">

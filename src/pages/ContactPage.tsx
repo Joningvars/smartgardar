@@ -26,7 +26,7 @@ export function ContactPage() {
     useContactForm();
 
   return (
-    <section className="px-4 py-16 md:py-24">
+    <section className="px-4 pt-28 pb-16 md:pt-36 md:pb-24">
       <div className="mx-auto max-w-2xl">
         <h1 className="font-display text-3xl font-bold text-(--color-text) md:text-4xl">
           Hafðu samband

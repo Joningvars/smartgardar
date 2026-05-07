@@ -24,7 +24,7 @@ export function ServicesPage() {
   }, []);
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8">
+    <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 md:pt-36 md:pb-24">
       <div className="mx-auto max-w-6xl">
         <h1 className="font-display text-3xl font-bold text-center sm:text-4xl">
           Þjónusta

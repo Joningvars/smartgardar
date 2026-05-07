@@ -4,8 +4,9 @@ import type { SiteData } from '../types/site';
 
 export const siteData: SiteData = {
   companyName: 'Smartgarðar',
-  phone: '+354 555 1234',
-  email: 'info@smartgardar.is',
+  foundedYear: 2005,
+  phone: '764-6868',
+  email: 'smartgardar@smartgardar.is',
   navigation: [
     { label: 'Forsíða', path: '/' },
     { label: 'Þjónusta', path: '/thjonusta' },

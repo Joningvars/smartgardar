@@ -3,6 +3,34 @@
 import { useEffect } from 'react';
 import { siteData } from '../data/site';
 import { Button } from '../components/ui/Button';
+import { PageHeader } from '../components/ui/PageHeader';
+
+const values = [
+  {
+    id: 'reynsla',
+    title: 'Yfir 20 ára reynsla',
+    description:
+      'Frá árinu 2005 höfum við sinnt þúsundum verkefna og byggt upp traust hjá fjölskyldum og fyrirtækjum.',
+  },
+  {
+    id: 'areidanleiki',
+    title: 'Áreiðanleiki',
+    description:
+      'Við mætum alltaf á réttum tíma og stöndum við okkar loforð. Einfalt og öruggt.',
+  },
+  {
+    id: 'persónuleg',
+    title: 'Persónuleg þjónusta',
+    description:
+      'Þú færð alltaf beint samband við okkur — engin símaver eða flókin kerfi.',
+  },
+  {
+    id: 'gæði',
+    title: 'Vönduð vinna',
+    description:
+      'Við leggjum metnað í hvert verkefni, hvort sem það er lítið eða stórt.',
+  },
+];
 
 export function AboutPage() {
   useEffect(() => {
@@ -19,38 +47,71 @@ export function AboutPage() {
   }, []);
 
   return (
-    <section className="px-4 py-16 sm:py-24">
-      <div className="mx-auto max-w-3xl">
-        <h1 className="font-display text-3xl font-bold tracking-tight text-(--color-text) sm:text-4xl">
-          Um Smartgarða
-        </h1>
+    <>
+      <PageHeader
+        title="Um Smartgarða"
+        subtitle="Stofnað 2005 — yfir 20 ára reynsla í garðaþjónustu."
+      />
 
-        <div className="mt-8 space-y-6 text-lg leading-relaxed text-(--color-text-muted)">
-          <p>
-            Smartgarðar er staðbundið garðyrkjufyrirtæki sem sérhæfir sig í
-            umhirðu garða og útisvæða. Við leggjum áherslu á vandaða vinnu, skýr
-            samskipti og áreiðanlega þjónustu.
+      {/* Intro section */}
+      <section className="px-4 py-12 md:py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xl leading-relaxed text-(--color-text) md:text-2xl">
+            Við erum lítið og persónulegt fyrirtæki sem elskar garða.
           </p>
-
-          <p>
-            Markmið okkar er einfalt: að halda garðinum þínum í toppstandi svo
-            þú getir notið hans án áhyggna. Hvort sem um er að ræða reglubundinn
-            grasslátt, beðahreinsun eða trjáklippingar — við sjáum um allt.
-          </p>
-
-          <p>
-            Við erum stolt af því að veita persónulega þjónustu þar sem
-            viðskiptavinir okkar fá alltaf skjót svör og heiðarlegt mat á
-            verkefnum.
+          <p className="mt-4 text-lg leading-relaxed text-(--color-text-muted)">
+            Smartgarðar var stofnað árið 2005 af fólki sem hafði brennandi áhuga
+            á útisvæðum og garðrækt. Síðan þá höfum við vaxið jafnt og þétt og
+            þjónað fjölskyldum og fyrirtækjum um allt höfuðborgarsvæðið.
           </p>
         </div>
+      </section>
 
-        <div className="mt-12">
-          <Button variant="primary" size="lg" href="/hafdu-samband">
-            Hafðu samband
-          </Button>
+      {/* Values grid */}
+      <section className="bg-(--color-surface-alt) px-4 py-12 md:py-16">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="font-display text-2xl font-medium text-center text-[oklch(0.25_0.06_145)] md:text-3xl">
+            Það sem gerir okkur öðruvísi
+          </h2>
+
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {values.map((value) => (
+              <div
+                key={value.id}
+                className="rounded-2xl bg-white p-6 border border-[#e8e5df] md:p-8"
+              >
+                <h3 className="font-display text-lg font-medium text-[oklch(0.25_0.06_145)]">
+                  {value.title}
+                </h3>
+                <p className="mt-2 text-(--color-text-muted) leading-relaxed">
+                  {value.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Personal touch section */}
+      <section className="px-4 py-12 md:py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-display text-2xl font-medium text-[oklch(0.25_0.06_145)] md:text-3xl">
+            Garðurinn þinn í góðum höndum
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-(--color-text-muted)">
+            Við vitum að garðurinn er mikilvægur hluti af heimilinu þínu. Þess
+            vegna komum við fram við hann eins og okkar eigin. Hvort sem þú
+            þarft reglubundna umhirðu eða aðstoð við stærra verkefni — við erum
+            hér til að hjálpa.
+          </p>
+
+          <div className="mt-8">
+            <Button variant="primary" size="lg" href="/hafdu-samband">
+              Hafðu samband við okkur
+            </Button>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

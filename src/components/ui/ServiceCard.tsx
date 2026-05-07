@@ -58,21 +58,21 @@ export function ServiceCard({
     <Link
       to={`/thjonusta/${service.slug}`}
       className={cn(
-        'block rounded-lg border border-(--color-border) bg-white p-6 transition hover:shadow-md hover:border-(--color-primary)/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-primary) focus-visible:ring-offset-2',
+        'block rounded-lg border border-(--color-border) bg-white p-4 md:p-8 transition hover:shadow-md hover:border-(--color-primary)/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-primary) focus-visible:ring-offset-2',
       )}
     >
-      <Heading className="font-display font-semibold text-lg">
+      <Heading className="font-display font-semibold text-base md:text-xl">
         {service.name}
       </Heading>
-      <p className="mt-2 text-(--color-text-muted)">
+      <p className="mt-1 text-sm text-(--color-text-muted) md:mt-3 md:text-base">
         {service.shortDescription}
       </p>
-      <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-(--color-primary)">
+      <span className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-(--color-primary) md:mt-4 md:text-sm">
         Sjá nánar
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          width="14"
+          height="14"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

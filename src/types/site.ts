@@ -19,6 +19,7 @@ export type PageMeta = {
  */
 export type SiteData = {
   companyName: string;
+  foundedYear: number;
   phone: string;
   email: string;
   navigation: NavItem[];

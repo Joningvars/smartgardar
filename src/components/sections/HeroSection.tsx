@@ -10,7 +10,7 @@ export function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Hero image — taller */}
-      <div className="relative h-[75vh] min-h-[500px] md:h-[85vh]">
+      <div className="relative h-[60vh] min-h-[420px] md:h-[80vh]">
         <img
           src={heroImage}
           alt="Fallegur garður í umsjá Smartgarða"
@@ -29,7 +29,7 @@ export function HeroSection() {
 
             <p className="mt-3 text-sm leading-relaxed text-(--color-text-muted) md:mt-4 md:text-base">
               Smartgarðar sér um almenna umhirðu garða og grasflata.
-              Grassláttur, beðahreinsun, trjáklippingar og almenn garðhirða.
+              Grassláttur, beðahreinsun, trjáklippingar og almenna garðhirðu.
             </p>
 
             <div className="mt-5 flex flex-col gap-3 md:mt-6 md:flex-row">
