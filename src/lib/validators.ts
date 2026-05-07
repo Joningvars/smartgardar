@@ -28,6 +28,19 @@ export function validateEmail(email: string): string | null {
 }
 
 /**
+ * Validates that a phone number is exactly 7 digits (Icelandic format).
+ * Strips spaces and dashes before checking.
+ */
+export function validatePhone(phone: string): string | null {
+  const digits = phone.replace(/[\s\-]/g, '');
+  if (digits.length === 0) return null; // phone is optional
+  if (!/^\d{7}$/.test(digits)) {
+    return 'Símanúmer þarf að vera 7 tölustafir';
+  }
+  return null;
+}
+
+/**
  * Validates the entire contact form. Name, email, and message are required.
  * Phone and serviceType are optional.
  *
@@ -40,6 +53,13 @@ export function validateContactForm(data: ContactFormData): ContactFormErrors {
   const nameError = validateRequired(data.name);
   if (nameError) {
     errors.name = nameError;
+  }
+
+  if (data.phone) {
+    const phoneError = validatePhone(data.phone);
+    if (phoneError) {
+      errors.phone = phoneError;
+    }
   }
 
   const emailRequiredError = validateRequired(data.email);
