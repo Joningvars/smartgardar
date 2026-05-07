@@ -250,7 +250,7 @@ export const services: Service[] = [
       'Við fellum tré á öruggan hátt, hvort sem um er að ræða lítil tré í garði eða stærri tré sem þarfnast sérstakrar aðgæslu. Öryggismál eru alltaf í fyrirrúmi og við sjáum um allan frágang.',
     highlights: [
       {
-        title: 'Öryggisfyrst',
+        title: 'Öryggið fyrst',
         description: 'Við fylgjum ströngum öryggisreglum við allar fellingar.',
       },
       {
@@ -262,8 +262,8 @@ export const services: Service[] = [
         description: 'Við fjarlægjum trjábolinn, greinar og hreinsum svæðið.',
       },
       {
-        title: 'Leyfisumsóknir',
-        description: 'Við aðstoðum við leyfisumsóknir þar sem þess er krafist.',
+        title: 'Ráðgjöf',
+        description: 'Við ráðleggjum um bestu lausnir eftir aðstæðum á staðnum.',
       },
     ],
     images: [
