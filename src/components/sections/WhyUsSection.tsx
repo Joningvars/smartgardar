@@ -22,9 +22,9 @@ export function WhyUsSection() {
               Af hverju Smartgarðar?
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-(--color-text-muted)">
-              Með yfir 20 ára reynslu og þúsundir verkefna á bak við okkur vitum
-              við hvað virkar. Við komum fram við garðinn þinn eins og okkar
-              eigin.
+              Áður þekkt sem Lóðasláttur — með yfir 20 ára reynslu og þúsundir
+              verkefna á bak við okkur vitum við hvað virkar. Við komum fram við
+              garðinn þinn eins og okkar eigin.
             </p>
             <ul className="mt-6 space-y-3">
               <li className="flex items-start gap-3">
