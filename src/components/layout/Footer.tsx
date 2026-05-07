@@ -83,7 +83,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-10 border-t border-(--color-border) pt-6 text-center">
           <p className="text-sm text-(--color-text-muted)">
-            &copy; 2025 {siteData.companyName}
+            &copy; 2026 {siteData.companyName}
           </p>
         </div>
       </div>

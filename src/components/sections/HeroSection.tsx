@@ -22,7 +22,7 @@ export function HeroSection() {
 
         {/* Floating card on bottom-left — aligned with navbar edges */}
         <div className="absolute bottom-6 left-4 right-4 md:bottom-10 md:left-6 md:right-auto md:max-w-md">
-          <div className="rounded-2xl bg-[#f7f5f0]/95 backdrop-blur-sm p-6 md:p-8 shadow-[0_2px_12px_rgba(0,0,0,0.08)] border border-[#e8e5df]">
+          <div className="rounded-2xl bg-white/80 backdrop-blur-3xl shadow-md p-6 md:p-8">
             <h1 className="font-display text-2xl font-medium leading-tight tracking-tight text-[oklch(0.25_0.06_145)] md:text-4xl">
               Fagleg garðaþjónusta sem þú getur treyst
             </h1>

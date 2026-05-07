@@ -3,7 +3,9 @@
 import { useEffect } from 'react';
 import { HeroSection } from '../components/sections/HeroSection';
 import { ServiceHighlights } from '../components/sections/ServiceHighlights';
+import { WhyUsSection } from '../components/sections/WhyUsSection';
 import { ProjectCarousel } from '../components/sections/ProjectCarousel';
+import { CtaBanner } from '../components/sections/CtaBanner';
 import { Testimonials } from '../components/sections/Testimonials';
 import { TrustSection } from '../components/sections/TrustSection';
 import { siteData } from '../data/site';
@@ -19,7 +21,9 @@ export function HomePage() {
     <>
       <HeroSection />
       <ServiceHighlights />
+      <WhyUsSection />
       <ProjectCarousel />
+      <CtaBanner />
       <Testimonials />
       <TrustSection />
     </>

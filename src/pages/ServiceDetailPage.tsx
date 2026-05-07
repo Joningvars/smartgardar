@@ -6,6 +6,15 @@ import { services } from '../data/services';
 import { siteData } from '../data/site';
 import { Button } from '../components/ui/Button';
 
+import img14 from '../assets/project_images/project-14.jpeg';
+import img15 from '../assets/project_images/project-15.jpeg';
+import img16 from '../assets/project_images/project-16.jpeg';
+import img17 from '../assets/project_images/project-17.jpeg';
+import img18 from '../assets/project_images/project-18.jpeg';
+import img19 from '../assets/project_images/project-19.jpeg';
+
+const placeholderImages = [img14, img15, img16, img17, img18, img19];
+
 export function ServiceDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const service = services.find((s) => s.slug === slug);
@@ -76,23 +85,18 @@ export function ServiceDetailPage() {
           </div>
 
           {/* Right column: image grid */}
-          {service.images && service.images.length > 0 && (
-            <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
-              {service.images.map((src, i) => (
-                <div
-                  key={i}
-                  className="aspect-square overflow-hidden rounded-lg"
-                >
-                  <img
-                    src={src}
-                    alt={`${service.name} verkefni ${i + 1}`}
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
-          )}
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
+            {placeholderImages.map((src, i) => (
+              <div key={i} className="aspect-square overflow-hidden rounded-lg">
+                <img
+                  src={src}
+                  alt={`${service.name} verkefni ${i + 1}`}
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
