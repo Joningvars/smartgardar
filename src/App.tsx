@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 import { HomePage } from './pages/HomePage';
 import { ServicesPage } from './pages/ServicesPage';
+import { ServiceDetailPage } from './pages/ServiceDetailPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/thjonusta" element={<ServicesPage />} />
+        <Route path="/thjonusta/:slug" element={<ServiceDetailPage />} />
         <Route path="/um-okkur" element={<AboutPage />} />
         <Route path="/hafdu-samband" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
