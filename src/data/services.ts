@@ -275,4 +275,72 @@ export const services: Service[] = [
       'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
     ],
   },
+  {
+    id: 'illgresiseyding',
+    name: 'Illgresiseyðing',
+    slug: 'illgresiseyding',
+    shortDescription: 'Markviss eyðing illgresis úr garði og gangstéttum.',
+    longDescription:
+      'Við sjáum um illgresiseyðingu á skilvirkan og umhverfisvænan hátt. Hvort sem um er að ræða garða, gangstéttir eða stærri svæði — við fjarlægjum illgresi og komum í veg fyrir að það nái sér aftur á strik.',
+    highlights: [
+      {
+        title: 'Umhverfisvænar aðferðir',
+        description: 'Við notum umhverfisvænar lausnir þar sem hægt er.',
+      },
+      {
+        title: 'Gangstéttir og hellulagnir',
+        description: 'Við hreinsum illgresi úr hellulögnum og gangstéttum.',
+      },
+      {
+        title: 'Reglubundin meðhöndlun',
+        description: 'Við komum reglulega til að halda illgresinu í skefjum.',
+      },
+      {
+        title: 'Allar tegundir svæða',
+        description: 'Garðar, bílastæði, gangstéttir og stærri lóðir.',
+      },
+    ],
+    images: [
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+    ],
+  },
+  {
+    id: 'mosataeting',
+    name: 'Mosatæting',
+    slug: 'mosataeting',
+    shortDescription: 'Fjarlæging mosa af þökum, veggjum og útisvæðum.',
+    longDescription:
+      'Mosi getur skemmt yfirborð og gert svæði hálu og ófríðu. Við fjarlægjum mosa af þökum, veggjum, hellulögnum og öðrum yfirborðum á skilvirkan hátt og komum í veg fyrir endurkomu hans.',
+    highlights: [
+      {
+        title: 'Þök og veggir',
+        description: 'Við hreinsum mosa af þökum og útveggjum á öruggan hátt.',
+      },
+      {
+        title: 'Hellulagnir',
+        description: 'Við fjarlægjum mosa úr hellulögnum og gangstéttum.',
+      },
+      {
+        title: 'Fyrirbyggjandi meðhöndlun',
+        description: 'Við meðhöndlum yfirborð til að seinka endurkomu mosa.',
+      },
+      {
+        title: 'Örugg vinna',
+        description: 'Við notum viðeigandi búnað og aðferðir fyrir hvert yfirborð.',
+      },
+    ],
+    images: [
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+      'https://placehold.co/400x400/2d5016/ffffff?text=Smartgarðar',
+    ],
+  },
 ];
