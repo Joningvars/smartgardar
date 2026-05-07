@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export function ServiceHighlights() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="pt-8 pb-16 md:pt-12 md:pb-24">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="font-display text-3xl font-medium text-[oklch(0.25_0.06_145)] md:text-4xl">
           Þjónustan okkar
