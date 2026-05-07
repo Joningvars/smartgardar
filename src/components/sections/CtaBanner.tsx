@@ -12,6 +12,9 @@ export function CtaBanner() {
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
         aria-hidden="true"
+        width={1920}
+        height={600}
+        loading="lazy"
       />
 
       {/* Dark overlay */}

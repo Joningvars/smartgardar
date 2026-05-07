@@ -13,6 +13,9 @@ export function WhyUsSection() {
               src={project05}
               alt="Garður í umsjá Smartgarða"
               className="h-[300px] w-full object-cover md:h-[420px]"
+              width={1067}
+              height={600}
+              loading="lazy"
             />
           </div>
 

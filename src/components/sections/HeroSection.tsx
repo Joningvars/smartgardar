@@ -15,6 +15,9 @@ export function HeroSection() {
           src={heroImage}
           alt="Fallegur garður í umsjá Smartgarða"
           className="h-full w-full object-cover"
+          fetchPriority="high"
+          width={1920}
+          height={1280}
         />
 
         {/* Dark overlay */}
