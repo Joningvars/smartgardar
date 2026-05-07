@@ -76,7 +76,23 @@ export function FormField({
       )}
 
       {type !== 'textarea' && type !== 'select' && (
-        <input {...sharedProps} type={type} />
+        <input
+          {...sharedProps}
+          type={type}
+          maxLength={type === 'tel' ? 7 : undefined}
+          pattern={type === 'tel' ? '[0-9]*' : undefined}
+          inputMode={type === 'tel' ? 'numeric' : undefined}
+          placeholder={type === 'tel' ? '0000000' : undefined}
+          onInput={
+            type === 'tel'
+              ? (e: React.FormEvent<HTMLInputElement>) => {
+                  const input = e.currentTarget;
+                  input.value = input.value.replace(/\D/g, '').slice(0, 7);
+                  onChange(input.value);
+                }
+              : undefined
+          }
+        />
       )}
 
       {error && (
