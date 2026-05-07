@@ -2,6 +2,7 @@
 
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
+import { ScrollToTop } from './components/ScrollToTop';
 import { HomePage } from './pages/HomePage';
 import { ServicesPage } from './pages/ServicesPage';
 import { ServiceDetailPage } from './pages/ServiceDetailPage';
@@ -12,6 +13,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 function App() {
   return (
     <Layout>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/thjonusta" element={<ServicesPage />} />

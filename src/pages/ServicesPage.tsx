@@ -34,12 +34,12 @@ export function ServicesPage() {
           fyrirtæki. Hér má sjá yfirlit yfir þá þjónustu sem við veitum.
         </p>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-2 md:gap-6">
           {services.map((service) => (
             <ServiceCard
               key={service.id}
               service={service}
-              variant="detailed"
+              variant="compact"
               headingLevel="h2"
             />
           ))}

@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 mx-4 mt-2 md:mx-6">
-      <div className="mx-auto rounded-lg bg-white/80 backdrop-blur-3xl shadow-md px-4 py-3.5 md:px-8 md:py-4">
+      <div className="mx-auto rounded-lg bg-white/80 backdrop-blur-3xl shadow-md px-5 py-4 md:px-8 md:py-4">
         {/* Desktop layout */}
         <div className="hidden md:flex items-center justify-between relative">
           {/* Left: hamburger + nav links */}
