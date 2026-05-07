@@ -74,7 +74,7 @@ Anything not listed here requires user approval.
 | Framework/UI | React |
 | Language | TypeScript |
 | Styling | TailwindCSS |
-| Routing | React Router, only if needed |
+| Routing | React Router |
 | Icons | Lucide React, if already present |
 | Forms | Native forms, existing project form setup |
 | Images | Static assets in `src/assets/` or `public/` |
