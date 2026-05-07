@@ -179,7 +179,7 @@ export const services: Service[] = [
     slug: 'gardaudun',
     shortDescription: 'Áburðargjöf og næring fyrir grasflöt og beð.',
     longDescription:
-      'Garðaúðun tryggir heilbrigðan og frodigan vöxt grasflata og plantna. Við metum ástand jarðvegsins og leggjum til réttan áburð og næringarefni til að garðurinn þrífist.',
+      'Garðaúðun tryggir heilbrigðan og góðan vöxt grasflata og plantna. Við metum ástand jarðvegsins og leggjum til réttan áburð og næringarefni til að garðurinn þrífist.',
     highlights: [
       {
         title: 'Jarðvegsgreining',
