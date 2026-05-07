@@ -77,7 +77,7 @@ export function Header() {
           <div className="flex items-center">
             <Link
               to={ctaItem.path}
-              className="cursor-pointer rounded-full bg-[oklch(0.82_0.12_140)] px-5 py-2 text-base font-medium text-(--color-text) transition-colors hover:bg-[oklch(0.77_0.12_140)]"
+              className="cursor-pointer rounded-full bg-[#dbfeb8] px-5 py-2 text-base font-medium text-(--color-text) transition-colors hover:bg-[#cdf4a8]"
             >
               {ctaItem.label}
             </Link>
