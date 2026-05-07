@@ -22,8 +22,14 @@ export function ContactPage() {
     }
   }, []);
 
-  const { formData, errors, isSubmitted, handleChange, handleSubmit } =
-    useContactForm();
+  const {
+    formData,
+    errors,
+    isSubmitted,
+    isSubmitting,
+    handleChange,
+    handleSubmit,
+  } = useContactForm();
 
   return (
     <section className="px-4 pt-28 pb-16 md:pt-36 md:pb-24">
@@ -112,7 +118,7 @@ export function ContactPage() {
             />
             <div className="mt-6">
               <Button type="submit" variant="primary" size="lg">
-                Senda fyrirspurn
+                {isSubmitting ? 'Sendi...' : 'Senda fyrirspurn'}
               </Button>
             </div>
           </form>

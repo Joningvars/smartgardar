@@ -52,11 +52,15 @@ export function useContactForm() {
         ...formData,
       });
 
-      await fetch('/', {
+      const response = await fetch(window.location.origin + '/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: body.toString(),
       });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
 
       setIsSubmitted(true);
     } catch {
