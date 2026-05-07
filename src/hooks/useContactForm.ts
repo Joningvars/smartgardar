@@ -12,13 +12,13 @@ const initialFormData: ContactFormData = {
 
 /**
  * Custom hook managing contact form state, validation, and submission.
- *
- * @returns Form state, error messages, submission status, and handler functions
+ * Submits to Netlify Forms.
  */
 export function useContactForm() {
   const [formData, setFormData] = useState<ContactFormData>(initialFormData);
   const [errors, setErrors] = useState<ContactFormErrors>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (field: keyof ContactFormData, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -31,7 +31,7 @@ export function useContactForm() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const validationErrors = validateContactForm(formData);
@@ -44,7 +44,26 @@ export function useContactForm() {
     }
 
     setErrors({});
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+
+    try {
+      const body = new URLSearchParams({
+        'form-name': 'contact',
+        ...formData,
+      });
+
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      });
+
+      setIsSubmitted(true);
+    } catch {
+      setErrors({ name: 'Villa kom upp við sendingu. Reyndu aftur.' });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const resetForm = () => {
@@ -57,6 +76,7 @@ export function useContactForm() {
     formData,
     errors,
     isSubmitted,
+    isSubmitting,
     handleChange,
     handleSubmit,
     resetForm,

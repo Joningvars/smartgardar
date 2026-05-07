@@ -1,9 +1,7 @@
 /**
- * SuccessMessage component — displays a confirmation message
- * with a checkmark icon. Uses role="alert" for immediate
- * screen reader announcement.
+ * SuccessMessage component — animated confirmation with checkmark.
+ * Fades in with a scaling checkmark circle animation.
  */
-import { cn } from '../../lib/cn';
 
 type SuccessMessageProps = {
   message: string;
@@ -13,26 +11,33 @@ export function SuccessMessage({ message }: SuccessMessageProps) {
   return (
     <div
       role="alert"
-      className={cn(
-        'flex items-center gap-3 rounded-md border border-(--color-success)/30 bg-(--color-success)/5 p-4',
-      )}
+      className="flex flex-col items-center justify-center py-12 animate-[fadeIn_0.4s_ease-out]"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="shrink-0 text-(--color-success)"
-        aria-hidden="true"
-      >
-        <path d="M20 6 9 17l-5-5" />
-      </svg>
-      <p className="text-sm font-medium text-(--color-success)">{message}</p>
+      {/* Animated checkmark circle */}
+      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-(--color-success)/10 animate-[scaleIn_0.3s_ease-out]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="text-(--color-success) animate-[drawCheck_0.4s_ease-out_0.2s_both]"
+          aria-hidden="true"
+        >
+          <path d="M20 6 9 17l-5-5" />
+        </svg>
+      </div>
+
+      <h3 className="mt-6 font-display text-2xl font-medium text-[oklch(0.25_0.06_145)]">
+        Takk fyrir!
+      </h3>
+      <p className="mt-2 text-center text-base text-(--color-text-muted) max-w-sm">
+        {message}
+      </p>
     </div>
   );
 }

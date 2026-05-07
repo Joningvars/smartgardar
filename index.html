@@ -15,6 +15,16 @@
 </head>
 
 <body>
+  <!-- Hidden form for Netlify Forms detection -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="tel" name="phone" />
+    <input type="email" name="email" />
+    <input type="text" name="serviceType" />
+    <textarea name="message"></textarea>
+    <input type="hidden" name="subject" value="Ný fyrirspurn frá smartgardar.is" />
+  </form>
+
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>

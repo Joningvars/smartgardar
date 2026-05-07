@@ -50,7 +50,22 @@ export function ContactPage() {
             <SuccessMessage message="Takk fyrir fyrirspurnina! Við munum hafa samband eins fljótt og auðið er." />
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="mt-10" noValidate>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+            className="mt-10"
+            noValidate
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
+            <input
+              type="hidden"
+              name="subject"
+              value="Ný fyrirspurn frá smartgardar.is"
+            />
             <FormField
               name="name"
               label="Nafn"
