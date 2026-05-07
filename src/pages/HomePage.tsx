@@ -7,7 +7,6 @@ import { WhyUsSection } from '../components/sections/WhyUsSection';
 import { ProjectCarousel } from '../components/sections/ProjectCarousel';
 import { CtaBanner } from '../components/sections/CtaBanner';
 import { Testimonials } from '../components/sections/Testimonials';
-import { TrustSection } from '../components/sections/TrustSection';
 import { siteData } from '../data/site';
 
 export function HomePage() {
@@ -25,7 +24,6 @@ export function HomePage() {
       <ProjectCarousel />
       <CtaBanner />
       <Testimonials />
-      <TrustSection />
     </>
   );
 }
