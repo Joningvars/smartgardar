@@ -88,7 +88,7 @@ export function Header() {
         <div className="flex md:hidden items-center justify-between">
           {/* Left: logo */}
           <Link to="/">
-            <img src={logo} alt={siteData.companyName} className="h-6 w-auto" />
+            <img src={logo} alt={siteData.companyName} className="h-8 w-auto" />
           </Link>
 
           {/* Right: hamburger only */}
