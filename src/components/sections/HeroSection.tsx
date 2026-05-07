@@ -4,7 +4,7 @@
  * Desktop: floating card overlay on bottom-left of the image.
  */
 import { Link } from 'react-router-dom';
-import heroImage from '../../assets/hero-garden.avif';
+import heroImage from '../../assets/hero-garden-tiny.avif';
 
 export function HeroSection() {
   return (
