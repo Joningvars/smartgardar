@@ -216,7 +216,7 @@ Example data (`src/data/services.ts`):
 export const services: Service[] = [
   {
     id: 'grasslattur',
-    name: 'Grassláttur',
+    name: 'Garðsláttur',
     slug: 'grasslattur',
     shortDescription: 'Reglubundinn grassláttur fyrir fallegan garð.',
     longDescription: 'Við sjáum um grasslátt á öllum tegundum grasflata...',

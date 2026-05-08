@@ -17,7 +17,7 @@ export const siteData: SiteData = {
     home: {
       title: 'Smartgarðar — Garðaþjónusta',
       description:
-        'Smartgarðar sér um almenna umhirðu garða og grasflata. Grassláttur, beðahreinsun, trjáklippingar.',
+        'Smartgarðar sér um almenna umhirðu garða og grasflata. Garðsláttur, beðahreinsun, trjáklippingar.',
     },
     services: {
       title: 'Þjónusta — Smartgarðar',

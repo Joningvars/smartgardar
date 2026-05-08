@@ -5,11 +5,11 @@ import type { Service } from '../types/service';
 export const services: Service[] = [
   {
     id: 'grasslattur',
-    name: 'Grassláttur',
+    name: 'Garðsláttur',
     slug: 'grasslattur',
-    shortDescription: 'Reglubundinn grassláttur fyrir fallegan garð.',
+    shortDescription: 'Reglubundinn garðsláttur fyrir fallegan garð.',
     longDescription:
-      'Við sjáum um grasslátt á öllum tegundum grasflata, hvort sem um er að ræða einkagarða, sameignir eða fyrirtæki. Reglubundinn grassláttur heldur garðinum snyrtilegan og heilbrigðan allt árið.',
+      'Við sjáum um grasslátt á öllum tegundum grasflata, hvort sem um er að ræða einkagarða, sameignir eða fyrirtæki. Reglubundinn garðsláttur heldur garðinum snyrtilegan og heilbrigðan allt árið.',
     highlights: [
       {
         title: 'Reglubundin þjónusta',

@@ -61,7 +61,7 @@ Use clear, natural Icelandic suitable for a local gardening company website.
 
 Preferred terms:
 
-- `Grassláttur`
+- `Garðsláttur`
 - `Beðahreinsun`
 - `Trjáklippingar`
 - `Almenn garðhirða`
