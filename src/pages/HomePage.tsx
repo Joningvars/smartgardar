@@ -13,7 +13,7 @@ import project03 from '../assets/project_images/project-03.jpeg';
 
 function AboutSection() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="pt-10 pb-20 md:pt-14 md:pb-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-20 items-center">
           <div>
