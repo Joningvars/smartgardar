@@ -1,6 +1,6 @@
 /* src/pages/HomePage.tsx — Direct, conversion-focused homepage */
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HeroSection } from '../components/sections/HeroSection';
 import { ServiceHighlights } from '../components/sections/ServiceHighlights';
@@ -11,6 +11,62 @@ import project19 from '../assets/project_images/project-19.jpeg';
 import project22 from '../assets/project_images/project-22.jpeg';
 
 function QuoteForm() {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const body = new URLSearchParams(data as unknown as Record<string, string>);
+    body.append('form-name', 'contact');
+
+    try {
+      await fetch(window.location.origin + '/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      });
+      setSubmitted(true);
+    } catch {
+      setSubmitted(true);
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  if (submitted) {
+    return (
+      <section className="relative z-10 -mt-10 md:-mt-14 px-4 md:px-6">
+        <div className="mx-auto max-w-5xl bg-white rounded-xl shadow-xl p-8 md:p-10 text-center animate-[fadeIn_0.4s_ease-out]">
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#6abf40]/10 mx-auto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-[#6abf40]"
+            >
+              <path d="M20 6 9 17l-5-5" />
+            </svg>
+          </div>
+          <h2 className="mt-4 font-display text-2xl font-bold text-(--color-text)">
+            Takk fyrir!
+          </h2>
+          <p className="mt-2 text-(--color-text-muted)">
+            Við munum hafa samband eins fljótt og auðið er.
+          </p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="relative z-10 -mt-10 md:-mt-14 px-4 md:px-6">
       <div className="mx-auto max-w-5xl bg-white rounded-xl shadow-xl p-8 md:p-10">
@@ -21,6 +77,7 @@ function QuoteForm() {
           name="contact"
           method="POST"
           data-netlify="true"
+          onSubmit={handleSubmit}
           className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-4"
         >
           <input type="hidden" name="form-name" value="contact" />
@@ -101,9 +158,10 @@ function QuoteForm() {
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-[#1a3a0a] px-6 py-3.5 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#6abf40]"
+            disabled={submitting}
+            className="rounded-lg bg-[#1a3a0a] px-6 py-3.5 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#6abf40] disabled:opacity-60"
           >
-            Senda
+            {submitting ? 'Sendi...' : 'Senda'}
           </button>
         </form>
       </div>
