@@ -22,7 +22,10 @@ export function HeroSection() {
       />
 
       {/* Desktop: layered diagonal green stripes */}
-      <div className="absolute inset-0 hidden md:block" aria-hidden="true">
+      <div
+        className="absolute inset-0 hidden bg-black/40 md:block"
+        aria-hidden="true"
+      >
         <svg
           className="absolute inset-0 h-full w-full"
           viewBox="0 0 1440 900"
@@ -65,11 +68,11 @@ export function HeroSection() {
       {/* Left-aligned content */}
       <div className="relative h-full flex items-center">
         <div className="mx-auto max-w-7xl px-6 w-full">
-          <div className="max-w-lg">
+          <div className="max-w-md">
             <p className="text-sm text-white/80 md:text-base">
               Alhliða garðaþjónusta á höfuðborgarsvæðinu
             </p>
-            <h1 className="mt-3 font-display text-4xl font-bold leading-tight text-white md:text-6xl">
+            <h1 className="mt-3 font-display text-3xl font-bold leading-tight text-white md:text-5xl">
               Fagleg
               <br />
               garðaþjónusta
