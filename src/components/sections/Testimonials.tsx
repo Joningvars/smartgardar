@@ -1,4 +1,4 @@
-/* src/components/sections/Testimonials.tsx — Clean white testimonials */
+/* src/components/sections/Testimonials.tsx — Simple testimonials on light bg */
 
 const testimonials = [
   {
@@ -26,23 +26,29 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
-        <h2 className="font-display text-3xl font-bold text-[#1a3a0a] md:text-4xl">
-          Umsagnir
+    <section className="bg-(--color-surface-alt) py-16 md:py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <h2 className="text-center font-display text-3xl font-bold text-(--color-text) md:text-4xl">
+          Hvað segja viðskiptavinir
         </h2>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="rounded-2xl border border-(--color-border) p-6 md:p-8"
+              className="bg-white rounded-lg p-6 md:p-8 shadow-sm"
             >
+              <div className="flex gap-1 text-[#6abf40] mb-3">
+                {'★★★★★'.split('').map((star, i) => (
+                  <span key={i} className="text-lg">
+                    {star}
+                  </span>
+                ))}
+              </div>
               <p className="text-base leading-relaxed text-(--color-text)">
                 &ldquo;{t.quote}&rdquo;
               </p>
-
-              <div className="mt-5 pt-4 border-t border-(--color-border)">
+              <div className="mt-4">
                 <p className="text-sm font-semibold text-(--color-text)">
                   {t.author}
                 </p>

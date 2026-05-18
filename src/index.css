@@ -8,15 +8,15 @@
 :root {
   --color-primary: #1a3a0a;
   --color-primary-light: #2a5a1a;
-  --color-secondary: oklch(0.40 0.06 145);
-  --color-accent: #dbfeb8;
-  --color-surface: #f5f3ee;
-  --color-surface-alt: #f5f3ee;
-  --color-text: #1a3a0a;
-  --color-text-muted: #6b6b60;
-  --color-border: #e0ddd6;
-  --color-error: oklch(0.50 0.20 25);
-  --color-success: oklch(0.45 0.12 145);
+  --color-secondary: #4a7a3a;
+  --color-accent: #6abf40;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f8f8f8;
+  --color-text: #1a1a1a;
+  --color-text-muted: #555555;
+  --color-border: #e5e5e5;
+  --color-error: #dc2626;
+  --color-success: #16a34a;
 }
 
 body {
