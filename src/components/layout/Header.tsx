@@ -28,25 +28,25 @@ export function Header() {
           <nav className="flex items-center gap-6">
             <Link
               to="/"
-              className="text-sm font-medium text-(--color-text) hover:text-(--color-primary)"
+              className="relative text-sm font-medium text-(--color-text) pb-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#6abf40] after:transition-all after:duration-300 hover:after:w-full"
             >
               Forsíða
             </Link>
             <Link
               to="/thjonusta"
-              className="text-sm font-medium text-(--color-text) hover:text-(--color-primary)"
+              className="relative text-sm font-medium text-(--color-text) pb-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#6abf40] after:transition-all after:duration-300 hover:after:w-full"
             >
               Þjónusta
             </Link>
             <Link
               to="/um-okkur"
-              className="text-sm font-medium text-(--color-text) hover:text-(--color-primary)"
+              className="relative text-sm font-medium text-(--color-text) pb-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#6abf40] after:transition-all after:duration-300 hover:after:w-full"
             >
               Um okkur
             </Link>
             <Link
               to="/hafdu-samband"
-              className="text-sm font-medium text-(--color-text) hover:text-(--color-primary)"
+              className="relative text-sm font-medium text-(--color-text) pb-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#6abf40] after:transition-all after:duration-300 hover:after:w-full"
             >
               Hafðu samband
             </Link>
