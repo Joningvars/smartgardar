@@ -7,9 +7,9 @@ export const services: Service[] = [
     id: 'grasslattur',
     name: 'Garðsláttur',
     slug: 'grasslattur',
-    shortDescription: 'Reglubundinn garðsláttur fyrir fallegan garð.',
+    shortDescription: 'Reglubundinn garðsláttur fyrir einstaklinga, húsfélög og fyrirtæki.',
     longDescription:
-      'Við sjáum um grasslátt á öllum tegundum grasflata, hvort sem um er að ræða einkagarða, sameignir eða fyrirtæki. Reglubundinn garðsláttur heldur garðinum snyrtilegan og heilbrigðan allt árið.',
+      'Garðsláttur er ein vinsælasta þjónustan okkar og er í boði allt sumarið. Við sjáum um reglubundinn slátt á öllum tegundum grasflata — hvort sem um er að ræða heimagarð, sameignir eða stærri lóðir fyrirtækja. Grasið er haldið í réttri hæð og frágangur er alltaf til fyrirmyndar.',
     highlights: [
       {
         title: 'Reglubundin þjónusta',
@@ -41,9 +41,9 @@ export const services: Service[] = [
     id: 'bedahreinsun',
     name: 'Beðahreinsun',
     slug: 'bedahreinsun',
-    shortDescription: 'Hreinsun og umhirða blómabeða.',
+    shortDescription: 'Hreinsun og umhirða garða og blómabeða eftir árstíðum.',
     longDescription:
-      'Fagleg beðahreinsun sem heldur garðinum snyrtilegum og blómlegum. Við fjarlægjum illgresi, dauð plöntuefni og sjáum um að beðin séu vel hirð og tilbúin fyrir hvert árstíðarskeið.',
+      'Garðar eru í misjöfnu ástandi, sérstaklega þegar þeir koma undan vetri. Við sjáum um garð- og beðahreinsun þar sem illgresi er fjarlægt, dauð plöntuefni hreinsuð og beðin undirbúin fyrir hvert árstíðarskeið. Þjónustan hentar bæði einkagörðum og sameignum.',
     highlights: [
       {
         title: 'Illgresishreinsun',
@@ -75,9 +75,9 @@ export const services: Service[] = [
     id: 'trjaklippingar',
     name: 'Trjáklippingar',
     slug: 'trjaklippingar',
-    shortDescription: 'Klipping og snyrting trjáa og runna.',
+    shortDescription: 'Fagleg snyrting á trjám og runnum sem setur fallegan svip á garðinn.',
     longDescription:
-      'Trjáklippingar og runnasnyrting til að halda garðinum opnum, birtu og í góðu formi. Við klippum trjá og runna af fagmennsku og gætum þess að viðhalda heilbrigðum vexti.',
+      'Við klippum og snyrtum tré og runna af öllum stærðum og tegundum. Fagleg trjáklipping heldur garðinum opnum og birtu, eykur öryggi og setur fallegan svip á útisvæðið. Við kunnum skil á hvenær best er að klippa og hvaða aðferðir henta hverri tegund.',
     highlights: [
       {
         title: 'Mótun og snyrting',
@@ -109,9 +109,9 @@ export const services: Service[] = [
     id: 'almenn-gardhirda',
     name: 'Almenn garðhirða',
     slug: 'almenn-gardhirda',
-    shortDescription: 'Heildarþjónusta fyrir garðinn þinn.',
+    shortDescription: 'Alhliða garðaþjónusta — allt sem þarf til að halda garðinum í toppformi.',
     longDescription:
-      'Almenn garðhirða sem nær yfir allt sem þarf til að halda útisvæðinu þínu í toppstandi. Við bjóðum upp á reglubundna umhirðu sem felur í sér grasslátt, beðahreinsun, trjáklippingar og fleira eftir þörfum.',
+      'Almenn garðhirða nær yfir allt sem þarf til að halda útisvæðinu þínu í toppstandi allan ársins hring. Við bjóðum upp á reglubundna umhirðu sem felur í sér garðslátt, beðahreinsun, trjáklippingar og fleira eftir þörfum. Einn aðili sér um allt — einfalt og þægilegt.',
     highlights: [
       {
         title: 'Heildarþjónusta',
