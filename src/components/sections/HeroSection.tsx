@@ -38,7 +38,7 @@ export function HeroSection() {
             </p>
             <Link
               to="/hafdu-samband"
-              className="mt-6 inline-flex items-center rounded bg-white px-6 py-3 text-sm font-semibold text-[#1a3a0a] uppercase tracking-wide transition-colors hover:bg-[#6abf40] hover:text-white md:px-8 md:py-4 md:text-base"
+              className="mt-6 inline-flex items-center rounded-lg bg-white px-6 py-3 text-sm font-semibold text-[#1a3a0a] uppercase tracking-wide transition-colors hover:bg-[#6abf40] hover:text-white md:px-8 md:py-4 md:text-base"
             >
               Fáðu ókeypis tilboð
             </Link>
