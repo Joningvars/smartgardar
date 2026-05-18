@@ -1,65 +1,88 @@
-/* src/pages/ServicesPage.tsx — Detailed services page for Smartgarðar */
+/* src/pages/ServicesPage.tsx — Services overview matching new design */
 
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { services } from '../data/services';
 import { siteData } from '../data/site';
-import { ServiceCard } from '../components/ui/ServiceCard';
-import { Button } from '../components/ui/Button';
 
 export function ServicesPage() {
   useEffect(() => {
     document.title = siteData.pages.services.title;
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        'content',
-        siteData.pages.services.description,
-      );
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = siteData.pages.services.description;
-      document.head.appendChild(meta);
-    }
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute('content', siteData.pages.services.description);
   }, []);
 
   return (
-    <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 md:pt-36 md:pb-24">
-      <div className="mx-auto max-w-6xl">
-        <h1 className="font-display text-3xl font-bold text-center sm:text-4xl">
-          Þjónusta
-        </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-(--color-text-muted)">
-          Við bjóðum upp á fjölbreytta garðaþjónustu fyrir einstaklinga og
-          fyrirtæki. Hér má sjá yfirlit yfir þá þjónustu sem við veitum.
-        </p>
-
-        <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-2 md:gap-6">
-          {services.map((service) => (
-            <ServiceCard
-              key={service.id}
-              service={service}
-              variant="compact"
-              headingLevel="h2"
-            />
-          ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <p className="text-lg text-(--color-text-muted)">
-            Hefur þú áhuga á þjónustu okkar? Hafðu samband og við svörum eins
-            fljótt og auðið er.
+    <>
+      {/* Page header */}
+      <section className="bg-[#1a3a0a] pt-28 pb-16 md:pt-36 md:pb-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="font-display text-3xl font-bold text-white md:text-5xl">
+            Þjónustan okkar
+          </h1>
+          <p className="mt-3 text-base text-white/70 md:text-lg max-w-2xl">
+            Við tökum að okkur fjölbreytt verkefni fyrir einstaklinga, húsfélög
+            og fyrirtæki.
           </p>
-          <Button
-            variant="primary"
-            size="lg"
-            href="/hafdu-samband"
-            className="mt-6"
+        </div>
+      </section>
+
+      {/* Services grid */}
+      <section className="py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <Link
+                key={service.id}
+                to={`/thjonusta/${service.slug}`}
+                className="group rounded-lg border border-(--color-border) p-6 transition-all hover:shadow-md hover:border-[#6abf40]/40"
+              >
+                <h2 className="font-display text-lg font-bold text-(--color-text) group-hover:text-[#1a3a0a] md:text-xl">
+                  {service.name}
+                </h2>
+                <p className="mt-2 text-sm text-(--color-text-muted) leading-relaxed">
+                  {service.shortDescription}
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#6abf40]">
+                  Sjá nánar
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="9 18 15 12 9 6" />
+                  </svg>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-(--color-surface-alt) py-16 md:py-20">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <h2 className="font-display text-2xl font-bold text-(--color-text) md:text-3xl">
+            Vantar þig aðstoð við garðinn?
+          </h2>
+          <p className="mt-3 text-(--color-text-muted)">
+            Hafðu samband og við svörum eins fljótt og auðið er.
+          </p>
+          <Link
+            to="/hafdu-samband"
+            className="mt-6 inline-flex items-center rounded-lg bg-[#6abf40] px-6 py-3 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#5aaf30]"
           >
             Hafðu samband
-          </Button>
+          </Link>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
