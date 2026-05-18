@@ -15,8 +15,14 @@ export function HeroSection() {
         fetchPriority="high"
       />
 
-      {/* Layered diagonal green stripes */}
-      <div className="absolute inset-0 bg-black/40" aria-hidden="true">
+      {/* Mobile: simple dark overlay */}
+      <div
+        className="absolute inset-0 bg-black/50 md:hidden"
+        aria-hidden="true"
+      />
+
+      {/* Desktop: layered diagonal green stripes */}
+      <div className="absolute inset-0 hidden md:block" aria-hidden="true">
         <svg
           className="absolute inset-0 h-full w-full"
           viewBox="0 0 1440 900"
