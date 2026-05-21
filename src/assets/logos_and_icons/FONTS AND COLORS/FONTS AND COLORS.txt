@@ -1,0 +1,9 @@
+The fonts used are:
+
+Organetto Exp Bold
+
+The colors used are:
+
+#5FC11C, #339D17 (Green Gradient)
+#FE7902 (Orange)
+#0C0C0C (Black)
