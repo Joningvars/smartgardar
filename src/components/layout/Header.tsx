@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { siteData } from '../../data/site';
 import { MobileMenu } from './MobileMenu';
-import logo from '../../assets/logos_and_icons/SVG/SMARTGARÐAR-01.svg';
+import logo from '../../assets/logos_and_icons/PNG/SMARTGARÐAR-01.png';
 import { cn } from '../../lib/cn';
 
 export function Header() {
@@ -20,7 +20,7 @@ export function Header() {
             <img
               src={logo}
               alt={siteData.companyName}
-              className="h-10 w-auto"
+              className="h-12 w-auto"
               width={208}
               height={40}
             />

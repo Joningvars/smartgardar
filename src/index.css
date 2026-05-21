@@ -9,14 +9,14 @@
   --color-primary: #1a3a0a;
   --color-primary-light: #2a5a1a;
   --color-secondary: #4a7a3a;
-  --color-accent: #6abf40;
+  --color-accent: #5FC11C;
   --color-surface: #ffffff;
   --color-surface-alt: #f8f8f8;
-  --color-text: #1a1a1a;
+  --color-text: #0C0C0C;
   --color-text-muted: #555555;
   --color-border: #e5e5e5;
   --color-error: #dc2626;
-  --color-success: #16a34a;
+  --color-success: #5FC11C;
 }
 
 body {
