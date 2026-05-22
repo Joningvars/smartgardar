@@ -18,7 +18,7 @@ type ButtonProps = {
 
 const variantStyles: Record<ButtonProps['variant'], string> = {
   primary:
-    'bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-light)]',
+    'bg-[var(--color-primary)] text-white hover:bg-[var(--color-accent)]',
   secondary:
     'bg-[var(--color-surface)] text-[var(--color-text)] border border-[var(--color-border)] hover:bg-[var(--color-surface-alt)]',
   outline:
