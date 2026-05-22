@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react';
 import { siteData } from '../data/site';
-import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 
 const values = [
