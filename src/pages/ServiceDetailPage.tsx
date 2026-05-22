@@ -107,7 +107,7 @@ export function ServiceDetailPage() {
 
               <Link
                 to="/hafdu-samband"
-                className="mt-10 inline-flex items-center rounded-lg bg-[#6abf40] px-6 py-3 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#5aaf30]"
+                className="mt-10 inline-flex items-center rounded-lg bg-[#1a3a0a] px-6 py-3 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#6abf40]"
               >
                 Fá tilboð
               </Link>
@@ -144,7 +144,7 @@ export function ServiceDetailPage() {
           </p>
           <Link
             to="/hafdu-samband"
-            className="mt-6 inline-flex items-center rounded-lg bg-[#6abf40] px-6 py-3 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#5aaf30]"
+            className="mt-6 inline-flex items-center rounded-lg bg-[#1a3a0a] px-6 py-3 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#6abf40]"
           >
             Hafðu samband
           </Link>

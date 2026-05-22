@@ -185,7 +185,7 @@ export function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full rounded-lg bg-[#6abf40] px-6 py-3.5 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#5aaf30] disabled:opacity-60 md:w-auto"
+                      className="w-full rounded-lg bg-[#1a3a0a] px-6 py-3.5 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#6abf40] disabled:opacity-60 md:w-auto"
                     >
                       {isSubmitting ? 'Sendi...' : 'Senda fyrirspurn'}
                     </button>

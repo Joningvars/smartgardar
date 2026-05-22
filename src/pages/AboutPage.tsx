@@ -2,8 +2,8 @@
 
 import { useEffect } from 'react';
 import { siteData } from '../data/site';
+import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
-import { PageHeader } from '../components/ui/PageHeader';
 
 const values = [
   {
@@ -48,10 +48,17 @@ export function AboutPage() {
 
   return (
     <>
-      <PageHeader
-        title="Um Smartgarða"
-        subtitle="Lóðasláttur sameinaðist Smartgörðum — yfir 20 ára reynsla."
-      />
+      {/* Page header */}
+      <section className="bg-[#1a3a0a] pt-28 pb-16 md:pt-36 md:pb-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="font-display text-3xl font-bold text-white md:text-5xl">
+            Um Smartgarða
+          </h1>
+          <p className="mt-3 text-base text-white/70 md:text-lg max-w-2xl">
+            Lóðasláttur sameinaðist Smartgörðum — yfir 20 ára reynsla.
+          </p>
+        </div>
+      </section>
 
       {/* Intro section */}
       <section className="px-4 py-12 md:py-16">

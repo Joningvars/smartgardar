@@ -79,7 +79,7 @@ export function Header() {
             </a>
             <Link
               to="/hafdu-samband"
-              className="rounded-lg bg-[#6abf40] px-5 py-2.5 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#5aaf30]"
+              className="rounded-lg bg-[#1a3a0a] px-5 py-2.5 text-sm font-semibold text-white uppercase tracking-wide transition-colors hover:bg-[#6abf40]"
             >
               Fá tilboð
             </Link>
