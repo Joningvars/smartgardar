@@ -2,7 +2,7 @@
  * HeroSection — Full-width image with layered diagonal green stripes.
  */
 import { Link } from 'react-router-dom';
-import heroImage from '../../assets/hero-green.avif';
+import heroImage from '../../assets/hero/lawm-mower.avif';
 
 export function HeroSection() {
   return (
