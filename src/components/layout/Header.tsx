@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { siteData } from '../../data/site';
 import { MobileMenu } from './MobileMenu';
-import logo from '../../assets/logos_and_icons/PNG/SMARTGARÐAR-01.png';
+import logo from '../../assets/logos_and_icons/ICON/JPEG/2-01.jpg';
 import { cn } from '../../lib/cn';
 
 export function Header() {
@@ -20,9 +20,9 @@ export function Header() {
             <img
               src={logo}
               alt={siteData.companyName}
-              className="h-12 w-auto"
-              width={208}
-              height={40}
+              className="h-9 w-auto"
+              width={156}
+              height={36}
             />
           </Link>
 
@@ -89,7 +89,7 @@ export function Header() {
         {/* Mobile layout */}
         <div className="flex md:hidden items-center justify-between h-14">
           <Link to="/">
-            <img src={logo} alt={siteData.companyName} className="h-8 w-auto" />
+            <img src={logo} alt={siteData.companyName} className="h-5 w-auto" />
           </Link>
 
           <div className="flex items-center gap-3">
