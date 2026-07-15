@@ -85,6 +85,17 @@ export function Footer() {
           <p className="text-sm text-(--color-text-muted)">
             &copy; 2026 {siteData.companyName}
           </p>
+          <p className="mt-1 text-sm text-(--color-text-muted)">
+            Vefur hannaður af{' '}
+            <a
+              href="https://musli.is"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-(--color-primary) rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-primary) focus-visible:ring-offset-2"
+            >
+              Müsli
+            </a>
+          </p>
         </div>
       </div>
     </footer>
